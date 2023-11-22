@@ -1,0 +1,123 @@
+[
+  {
+    "titulo": "Cien años de soledad",
+    "autor": "Gabriel García Márquez",
+    "descripcion": "Una obra maestra que narra la historia de la familia Buendía en el ficticio Macondo.",
+    "prestado": false
+  },
+  {
+    "titulo": "1984",
+    "autor": "George Orwell",
+    "descripcion": "Una novela distópica que describe un futuro totalitario y vigilado.",
+    "prestado": true
+  },
+  {
+    "titulo": "El señor de los anillos",
+    "autor": "J.R.R. Tolkien",
+    "descripcion": "Una epopeya fantástica que sigue las aventuras de Frodo Bolsón para destruir el Anillo Único.",
+    "prestado": false
+  },
+  {
+    "titulo": "Harry Potter y la piedra filosofal",
+    "autor": "J.K. Rowling",
+    "descripcion": "El inicio de la saga de Harry Potter, un joven mago que descubre su verdadera identidad.",
+    "prestado": true
+  },
+  {
+    "titulo": "Crónica de una muerte anunciada",
+    "autor": "Gabriel García Márquez",
+    "descripcion": "La historia de un asesinato anunciado en un pequeño pueblo latinoamericano.",
+    "prestado": false
+  },
+  {
+    "titulo": "Orgullo y prejuicio",
+    "autor": "Jane Austen",
+    "descripcion": "Una novela clásica que explora la relación entre Elizabeth Bennet y el Sr. Darcy en la Inglaterra del siglo XIX.",
+    "prestado": false
+  },
+  {
+    "titulo": "Fahrenheit 451",
+    "autor": "Ray Bradbury",
+    "descripcion": "Una distopía que aborda la quema de libros en una sociedad que prohíbe la lectura.",
+    "prestado": true
+  },
+  {
+    "titulo": "El hobbit",
+    "autor": "J.R.R. Tolkien",
+    "descripcion": "Las aventuras de Bilbo Bolsón en su búsqueda del tesoro custodiado por el dragón Smaug.",
+    "prestado": false
+  },
+  {
+    "titulo": "Matar a un ruiseñor",
+    "autor": "Harper Lee",
+    "descripcion": "La historia de un abogado que defiende a un hombre negro acusado injustamente en el sur de Estados Unidos.",
+    "prestado": true
+  },
+  {
+    "titulo": "Crimen y castigo",
+    "autor": "Fyodor Dostoevsky",
+    "descripcion": "La novela sigue la vida de Rodion Raskolnikov, un estudiante que comete un asesinato y enfrenta las consecuencias.",
+    "prestado": false
+  },
+  {
+    "titulo": "El Gran Gatsby",
+    "autor": "F. Scott Fitzgerald",
+    "descripcion": "La historia de Jay Gatsby y su obsesión por el sueño americano durante la década de 1920.",
+    "prestado": true
+  },
+  {
+    "titulo": "La odisea",
+    "autor": "Homero",
+    "descripcion": "La epopeya clásica que sigue las peripecias de Ulises en su viaje de regreso a casa después de la Guerra de Troya.",
+    "prestado": false
+  },
+  {
+    "titulo": "Los juegos del hambre",
+    "autor": "Suzanne Collins",
+    "descripcion": "En un futuro distópico, Katniss Everdeen participa en los Juegos del Hambre para sobrevivir y proteger a su hermana.",
+    "prestado": false
+  },
+  {
+    "titulo": "Rayuela",
+    "autor": "Julio Cortázar",
+    "descripcion": "Una novela experimental que permite a los lectores elegir su propio recorrido a través de la historia.",
+    "prestado": true
+  },
+  {
+    "titulo": "En el camino",
+    "autor": "Jack Kerouac",
+    "descripcion": "La narrativa de la generación beatnik, siguiendo los viajes de Sal Paradise y Dean Moriarty por Estados Unidos.",
+    "prestado": false
+  },
+  {
+    "titulo": "Don Quijote de la Mancha",
+    "autor": "Miguel de Cervantes",
+    "descripcion": "La historia del ingenioso hidalgo Don Quijote que busca aventuras en la España del siglo XVII.",
+    "prestado": true
+  },
+  {
+    "titulo": "Drácula",
+    "autor": "Bram Stoker",
+    "descripcion": "La famosa novela de vampiros que sigue la persecución del Conde Drácula en Londres.",
+    "prestado": false
+  },
+  {
+    "titulo": "Moby-Dick",
+    "autor": "Herman Melville",
+    "descripcion": "La obsesiva búsqueda del capitán Ahab de la ballena blanca, Moby-Dick.",
+    "prestado": true
+  },
+  {
+    "titulo": "El retrato de Dorian Gray",
+    "autor": "Oscar Wilde",
+    "descripcion": "La historia de un retrato mágico que envejece mientras su sujeto, Dorian Gray, permanece joven.",
+    "prestado": false
+  },
+  {
+    "titulo": "La metamorfosis",
+    "autor": "Franz Kafka",
+    "descripcion": "La impactante historia de Gregor Samsa, quien se despierta un día transformado en un insecto gigante.",
+    "prestado": true
+  }
+]
+  
