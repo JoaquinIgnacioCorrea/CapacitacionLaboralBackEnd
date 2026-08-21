@@ -12,6 +12,7 @@ namespace EjercicioIntegrador
         static void Main(string[] args)
         {
             #region Conexion BDD
+            // Configura Entity Framework para trabajar con la base de datos del ejercicio.
             string Conexion = Environment.GetEnvironmentVariable("CAPACITACION_SQL_CONNECTION")
                 ?? "Data Source=localhost;Initial Catalog=PruebasCapacitacion;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
             var Opcion = new DbContextOptionsBuilder<ConexionBDD>().UseSqlServer(Conexion).Options;
@@ -19,11 +20,13 @@ namespace EjercicioIntegrador
             #endregion
 
             #region Carga Archivo Texto
+            // Cada linea contiene fecha, vendedor, importe y tipo de empresa en posiciones fijas.
             string DireccionArchTxt = Path.Combine(AppContext.BaseDirectory, "ventas-formato-fijo.txt");
             var Archivo = File.ReadAllLines(DireccionArchTxt);
             #endregion
 
             #region Carga de Ventas y Rechazos
+            // Solo se aceptan ventas de la fecha parametrizada y con datos validos.
             var FechaConvertida = BDDContexto.Parametria.FirstOrDefault();
 
             foreach (var Linea in Archivo)
@@ -64,6 +67,7 @@ namespace EjercicioIntegrador
             #endregion
 
             #region Listar Act
+            // Agrupa la informacion almacenada para generar los reportes solicitados.
             var ListaMasVenta = BDDContexto.Ventas.Where(v => v.Venta > 100000)
                 .Select(v => new Ventas{ Id = int.Parse(v.CodVendedor.ToString()), Venta = v.Venta }).ToList();
 

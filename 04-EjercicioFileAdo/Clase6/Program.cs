@@ -7,7 +7,7 @@ namespace Clase6
     {
         static void Main(string[] args)
         {
-            //Pasaje de Archivo de texto a una lista de objetos
+            // Convierte cada registro delimitado del archivo en un objeto de usuario.
             string DireccionArchivo = Path.Combine(AppContext.BaseDirectory, "usuarios-delimitados.txt");
             List<UsuarioPracticaJC> ListaUsuariosEscritura = new List<UsuarioPracticaJC>();
             string[] ListaUsuarios = File.ReadAllLines(DireccionArchivo);
@@ -19,13 +19,13 @@ namespace Clase6
                 ListaUsuariosEscritura.Add(NuevoUsuario);
             }
 
-            //Conexion de SqlMS
+            // Usa la conexion configurada por el entorno o una configuracion local predeterminada.
             string ConexionBddString = Environment.GetEnvironmentVariable("CAPACITACION_SQL_CONNECTION")
                 ?? @"Data Source=localhost;Initial Catalog=PruebasCapacitacion;Integrated Security=True;Trust Server Certificate=True";
             SqlConnection ConexionBdd = new SqlConnection(ConexionBddString);
 
             ConexionBdd.Open();
-            //Se escribe lista de usuarios en base de datos SQL
+            // Inserta los usuarios procesados en SQL Server.
             SqlCommand UsuariosBaseDatos = ConexionBdd.CreateCommand();
             foreach (var Usuario in ListaUsuariosEscritura)
             {
@@ -41,7 +41,7 @@ namespace Clase6
                 }
             }
 
-            //Se lee base de datos Sql y pasamos datos a una lista de objetos
+            // Lee los usuarios almacenados y los transforma nuevamente en objetos.
             SqlCommand UsuariosBaseDatosLec = ConexionBdd.CreateCommand();
             UsuariosBaseDatosLec.CommandText = @"select *  from Usuario";
             using (SqlDataReader LectorUsuarios = UsuariosBaseDatosLec.ExecuteReader())

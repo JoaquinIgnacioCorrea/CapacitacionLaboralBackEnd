@@ -1,11 +1,11 @@
-/*Actividades*/
-/*1. listar peliculas sin director */
-/*2. listar peliculas sin productora */
-/*3. listar peliculas sin actores */
-/*4. listar actores sin papeles */
-/*5. listar cantidad peliculas por productora con recaudacion > $100.000.000 */
-/*6. listar los directores con mayor recaudación */
-/*7. listar los directores con mayor recaudación en los años 80*/
+/* Consultas de integridad y analisis sobre peliculas, actores y productoras. */
+/* 1. Peliculas sin director asociado. */
+/* 2. Peliculas sin productora asociada. */
+/* 3. Peliculas sin actuaciones registradas. */
+/* 4. Actores sin papeles registrados. */
+/* 5. Cantidad y recaudacion por productora para peliculas exitosas. */
+/* 6. Directores ordenados por la mayor recaudacion obtenida. */
+/* 7. Directores con mayor recaudacion durante la decada de 1980. */
 
 /*1. listar peliculas sin director */
 select *
@@ -37,17 +37,17 @@ inner join Productoras ON Productoras.id_productora = Peliculas.id_productora
 where recaudacion > 100000000
 group by Productoras.id_productora, Productoras.nombre
 
-/*6. listar los directores con mayor recaudación */
+/*6. listar los directores con mayor recaudaciï¿½n */
 select Directores.nombre Nombre, format(MAX(recaudacion),'C0') Recaudacion
 from Directores
 inner join Peliculas on Peliculas.id_director = Directores.id_director
 group by Peliculas.id_director, Directores.nombre
 order by max(Peliculas.recaudacion) desc
 
-/*7. listar los directores con mayor recaudación en los años 80*/
+/*7. listar los directores con mayor recaudaciï¿½n en los aï¿½os 80*/
 select Directores.nombre Nombre, format(MAX(recaudacion),'C0') Recaudacion
 from Directores
 inner join Peliculas on Peliculas.id_director = Directores.id_director
-where Peliculas.año_estreno between '1980' and '1989'
+where Peliculas.aï¿½o_estreno between '1980' and '1989'
 group by Peliculas.id_director, Directores.nombre
 order by max(Peliculas.recaudacion) desc

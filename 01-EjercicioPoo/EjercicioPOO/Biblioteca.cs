@@ -17,6 +17,7 @@ namespace EjercicioPoo
 
         public void PrestarLibro(string libro, string estudiante)
         {
+            // Solo se presta el ejemplar si existe y no esta prestado.
             Libro LibroEncontrado = ListaLibros.Find(LibroBuscado => LibroBuscado.Titulo == libro);
 
             if(LibroEncontrado.Prestado == false) 
@@ -29,6 +30,7 @@ namespace EjercicioPoo
 
         public void DevolverLibro(string libro, string estudiante)
         {
+            // La devolucion cambia el estado del libro a disponible.
             Libro LibroEncontrado = ListaLibros.Find(LibroBuscado => LibroBuscado.Titulo == libro);
 
             if (LibroEncontrado.Prestado == true)
@@ -41,6 +43,7 @@ namespace EjercicioPoo
 
         public void ListarLibros()
         {
+            // Se separan los libros disponibles de los que estan prestados.
             Console.WriteLine("Libros Disponibles:\n");
             foreach (var libro in ListaLibros)
             {
@@ -55,6 +58,7 @@ namespace EjercicioPoo
 
         public void ListarLibrosPrestadosAlumno(string alumno)
         {
+            // Reune los libros prestados para mostrar un resumen por estudiante.
             StringBuilder ListadoLibrosPrestados = new StringBuilder();
             var cant = ListaLibros.Count(libro => libro.Prestado == true);
             foreach(var libros in ListaLibros)

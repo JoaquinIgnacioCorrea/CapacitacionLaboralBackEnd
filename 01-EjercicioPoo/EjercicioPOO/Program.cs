@@ -10,6 +10,7 @@ namespace EjercicioPoo
     {
         static void Main()
         {
+            // La biblioteca se inicializa con los libros definidos en el archivo JSON.
             #region Carga de datos
             string data = File.ReadAllText(Path.Combine(AppDomain.CurrentDomain.BaseDirectory,"libros-biblioteca.json"));
 

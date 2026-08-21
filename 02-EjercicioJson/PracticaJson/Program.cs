@@ -30,15 +30,15 @@ namespace PracticaJson
             };
             #endregion
 
-            //Ejercicio 1
+            // Ejercicio 1: convierte los datos de una persona a un objeto tipado.
             Persona EjercicioEj1 = JsonSerializer.Deserialize<Persona>(ejercicio1, normalizacionVariables);
             Console.WriteLine($"Nombre: {EjercicioEj1.Nombre}\nEdad: {EjercicioEj1.Edad}\nPais: {EjercicioEj1.Pais}\nActivo: {EjercicioEj1.Activo}.");
 
-            //Ejercicio 2
+            // Ejercicio 2: muestra un usuario junto con sus amigos y notificaciones.
             Usuarios EjercicioEj2 = JsonSerializer.Deserialize<Usuarios>(ejercicio2, normalizacionVariables);
             Console.WriteLine($"Usuario: {EjercicioEj2.Usuario}\nAmigos del Usuario: {EjercicioEj2.MostrarAmigos()}\nNotificaciones del Usuario: {EjercicioEj2.NotificacionesUsuario}");
 
-            //Ejercicio 3
+            // Ejercicio 3: recorre equipos y jugadores para imprimir sus estadisticas.
             PartidaEst EjercicioEj3 = JsonSerializer.Deserialize<PartidaEst>(ejercicio3, normalizacionVariables);
             foreach (var Estadistica in EjercicioEj3.Estadisticas)
             {
@@ -49,7 +49,7 @@ namespace PracticaJson
                 }
             }
 
-            //Ejercicio 4
+            // Ejercicio 4: lista productos y sus detalles anidados.
             ProductosLista EjercicioEj4 = JsonSerializer.Deserialize<ProductosLista>(ejercicio4, normalizacionVariables);
             foreach (var productos in EjercicioEj4.Productos)
             {
