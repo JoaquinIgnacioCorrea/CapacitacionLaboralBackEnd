@@ -1,0 +1,4 @@
+cod1;Alejandro;jara
+cod2;andres;Bustos
+cod3;Fernando;Mossier
+cod4;Nicolas;acostA
