@@ -11,7 +11,7 @@ namespace EjercicioPoo
         static void Main()
         {
             #region Carga de datos
-            string data = File.ReadAllText(Path.Combine(AppDomain.CurrentDomain.BaseDirectory,"data.json"));
+            string data = File.ReadAllText(Path.Combine(AppDomain.CurrentDomain.BaseDirectory,"libros-biblioteca.json"));
 
             #endregion
             #region Normalizacion de Variables

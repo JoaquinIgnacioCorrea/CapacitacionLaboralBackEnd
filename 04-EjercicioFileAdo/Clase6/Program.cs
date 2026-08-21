@@ -1,5 +1,4 @@
-﻿using Clase6.Domain;
-using Microsoft.Data.SqlClient;
+﻿using Microsoft.Data.SqlClient;
 using System.Text.Json;
 
 namespace Clase6
@@ -9,7 +8,7 @@ namespace Clase6
         static void Main(string[] args)
         {
             //Pasaje de Archivo de texto a una lista de objetos
-            string DireccionArchivo = Path.Combine(AppContext.BaseDirectory, "data.txt");
+            string DireccionArchivo = Path.Combine(AppContext.BaseDirectory, "usuarios-delimitados.txt");
             List<UsuarioPracticaJC> ListaUsuariosEscritura = new List<UsuarioPracticaJC>();
             string[] ListaUsuarios = File.ReadAllLines(DireccionArchivo);
             

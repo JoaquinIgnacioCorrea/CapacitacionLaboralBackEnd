@@ -8,16 +8,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Update="ejercicio4.json">
+    <None Update="catalogo-productos.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ejercicio3.json">
+    <None Update="estadisticas-partida.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ejercicio2.json">
+    <None Update="usuario-con-amigos.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ejercicio1.json">
+    <None Update="persona.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

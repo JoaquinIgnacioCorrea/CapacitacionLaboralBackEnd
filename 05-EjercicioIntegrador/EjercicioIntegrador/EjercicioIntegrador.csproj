@@ -10,7 +10,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.25" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.25" />
-    <None Include="..\data.txt" Link="data.txt" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\ventas-formato-fijo.txt" Link="ventas-formato-fijo.txt" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
 </Project>

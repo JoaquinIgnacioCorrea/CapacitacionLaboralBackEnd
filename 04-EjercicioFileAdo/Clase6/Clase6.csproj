@@ -9,7 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.2" />
-    <None Include="..\data.txt" Link="data.txt" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\usuarios-delimitados.txt" Link="usuarios-delimitados.txt" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
 </Project>

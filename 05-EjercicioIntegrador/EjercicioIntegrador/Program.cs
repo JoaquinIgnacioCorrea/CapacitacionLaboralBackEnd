@@ -19,7 +19,7 @@ namespace EjercicioIntegrador
             #endregion
 
             #region Carga Archivo Texto
-            string DireccionArchTxt = Path.Combine(AppContext.BaseDirectory, "data.txt");
+            string DireccionArchTxt = Path.Combine(AppContext.BaseDirectory, "ventas-formato-fijo.txt");
             var Archivo = File.ReadAllLines(DireccionArchTxt);
             #endregion
 
