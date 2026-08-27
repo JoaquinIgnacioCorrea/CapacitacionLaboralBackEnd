@@ -1,4 +1,4 @@
-# Capacitacion BackEnd CDA
+# Capacitación BackEnd
 
 Repositorio con ejercicios practicos de desarrollo backend en C# y SQL.
 
